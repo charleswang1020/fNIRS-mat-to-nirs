@@ -1,3 +1,5 @@
+% Licensed under the MIT License. See LICENSE file for details.
+
 df_raw=load('14_2.mat'); % df_1=load('run2.nirs', '-mat');
 df = cell2mat(struct2cell(df_raw)); % get the raw data from the mat file
 nirs_1 = df([1:17], [5000:end])'; % get the raw data, need to check the raw data structure
